@@ -1,0 +1,533 @@
+ubuntu-mate
+    description: Desktop Computer
+    product: To be filled by O.E.M. (To be filled by O.E.M.)
+    vendor: To be filled by O.E.M.
+    version: To be filled by O.E.M.
+    serial: To be filled by O.E.M.
+    width: 64 bits
+    capabilities: smbios-2.8 dmi-2.8 smp vsyscall32
+    configuration: boot=normal chassis=desktop family=To be filled by O.E.M. sku=To be filled by O.E.M. uuid=00020003-0004-0005-0006-000700080009
+  *-core
+       description: Motherboard
+       product: Aptio CRB
+       vendor: AMI Corporation
+       physical id: 0
+       version: To be filled by O.E.M.
+       serial: To be filled by O.E.M.
+       slot: To be filled by O.E.M.
+     *-firmware
+          description: BIOS
+          vendor: American Megatrends Inc.
+          physical id: 0
+          version: QW37AR32
+          date: 02/17/2015
+          size: 64KiB
+          capacity: 960KiB
+          capabilities: pci upgrade shadowing cdboot bootselect socketedrom edd int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int9keyboard int14serial int17printer acpi usb biosbootspecification uefi
+     *-memory
+          description: System Memory
+          physical id: 28
+          slot: System board or motherboard
+          size: 4GiB
+        *-bank:0
+             description: DIMM DDR3 1600 MHz (0.6 ns)
+             product: 9905469-157.A00LF
+             vendor: Kingston
+             physical id: 0
+             serial: 1036CDB8
+             slot: A1_DIMM0
+             size: 4GiB
+             width: 64 bits
+             clock: 1600MHz (0.6ns)
+        *-bank:1
+             description: DIMM [empty]
+             product: Array1_PartNumber1
+             vendor: A1_Manufacturer1
+             physical id: 1
+             serial: A1_SerNum1
+             slot: A1_DIMM1
+     *-cache:0
+          description: L1 cache
+          physical id: 32
+          slot: CPU Internal L1
+          size: 224KiB
+          capacity: 224KiB
+          capabilities: internal write-back
+          configuration: level=1
+     *-cache:1
+          description: L2 cache
+          physical id: 33
+          slot: CPU Internal L2
+          size: 2MiB
+          capacity: 2MiB
+          capabilities: internal write-back unified
+          configuration: level=2
+     *-cpu
+          description: CPU
+          product: Intel(R) Celeron(R) CPU  J1900  @ 1.99GHz
+          vendor: Intel Corp.
+          physical id: 34
+          bus info: cpu@0
+          version: Intel(R) Celeron(R) CPU J1900 @ 1.99GHz
+          slot: SOCKET 0
+          size: 1568MHz
+          capacity: 2415MHz
+          width: 64 bits
+          clock: 83MHz
+          capabilities: x86-64 fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp constant_tsc arch_perfmon pebs bts rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm sse4_1 sse4_2 movbe popcnt tsc_deadline_timer rdrand lahf_lm 3dnowprefetch epb pti tpr_shadow vnmi flexpriority ept vpid tsc_adjust smep erms dtherm ida arat cpufreq
+          configuration: cores=4 enabledcores=4 threads=4
+     *-pci
+          description: Host bridge
+          product: Atom Processor Z36xxx/Z37xxx Series SoC Transaction Register
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 0e
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=iosf_mbi_pci
+          resources: irq:0
+        *-display
+             description: VGA compatible controller
+             product: Atom Processor Z36xxx/Z37xxx Series Graphics & Display
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             version: 0e
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm msi vga_controller bus_master cap_list rom
+             configuration: driver=i915 latency=0
+             resources: irq:89 memory:90000000-903fffff memory:80000000-8fffffff ioport:e020(size=8) memory:c0000-dffff
+        *-generic:0
+             description: SD Host controller
+             product: Atom Processor Z36xxx/Z37xxx Series SDIO Controller
+             vendor: Intel Corporation
+             physical id: 12
+             bus info: pci@0000:00:12.0
+             version: 0e
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: driver=sdhci-pci latency=0
+             resources: irq:18 memory:90923000-90923fff memory:90922000-90922fff
+        *-usb
+             description: USB controller
+             product: Atom Processor Z36xxx/Z37xxx, Celeron N2000 Series USB xHCI
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 0e
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: irq:87 memory:90900000-9090ffff
+           *-usbhost:0
+                product: xHCI Host Controller
+                vendor: Linux 4.15.0-13-generic xhci-hcd
+                physical id: 0
+                bus info: usb@1
+                logical name: usb1
+                version: 4.15
+                capabilities: usb-2.00
+                configuration: driver=hub slots=6 speed=480Mbit/s
+              *-usb:0
+                   description: USB hub
+                   product: ASM1074
+                   vendor: QNAP System, Inc.
+                   physical id: 1
+                   bus info: usb@1:1
+                   version: 0.01
+                   serial: 000000000051
+                   capabilities: usb-2.10
+                   configuration: driver=hub maxpower=100mA slots=4 speed=480Mbit/s
+                 *-usb
+                      description: Mass storage device
+                      product: Flash Disk
+                      vendor: CBM
+                      physical id: 3
+                      bus info: usb@1:1.3
+                      logical name: scsi6
+                      version: 1.00
+                      serial: 171716007B65D800
+                      capabilities: usb-2.00 scsi emulated scsi-host
+                      configuration: driver=usb-storage maxpower=100mA speed=480Mbit/s
+                    *-disk
+                         description: SCSI Disk
+                         product: Flash Disk
+                         vendor: CBM
+                         physical id: 0.0.0
+                         bus info: scsi@6:0.0.0
+                         logical name: /dev/sdd
+                         version: 5.00
+                         size: 2022MiB (2120MB)
+                         capabilities: removable
+                         configuration: ansiversion=2 logicalsectorsize=512 sectorsize=512
+                       *-medium
+                            physical id: 0
+                            logical name: /dev/sdd
+                            size: 2022MiB (2120MB)
+                            capabilities: partitioned partitioned:dos
+                            configuration: signature=9d03258a
+                          *-volume
+                               description: Windows FAT volume
+                               vendor: mkfs.fat
+                               physical id: 1
+                               logical name: /dev/sdd1
+                               logical name: /media/ubuntu-mate/32F6-1E7E
+                               version: FAT32
+                               serial: 32f6-1e7e
+                               size: 2019MiB
+                               capacity: 2021MiB
+                               capabilities: primary fat initialized
+                               configuration: FATs=2 filesystem=fat mount.fstype=vfat mount.options=rw,nosuid,nodev,relatime,uid=999,gid=999,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,showexec,utf8,flush,errors=remount-ro state=mounted
+              *-usb:1
+                   description: Keyboard
+                   product: Dell QuietKey Keyboard
+                   vendor: DELL
+                   physical id: 2
+                   bus info: usb@1:2
+                   version: 1.01
+                   capabilities: usb-1.10
+                   configuration: driver=usbhid maxpower=100mA speed=2Mbit/s
+              *-usb:2
+                   description: Mass storage device
+                   product: Spaceloop 4GB
+                   vendor: Alcor Micro Corp.
+                   physical id: 3
+                   bus info: usb@1:3
+                   logical name: scsi4
+                   version: 1.07
+                   serial: 152A7465
+                   capabilities: usb-2.00 scsi emulated scsi-host
+                   configuration: driver=usb-storage maxpower=100mA speed=480Mbit/s
+                 *-disk
+                      description: SCSI Disk
+                      product: Spaceloop 4GB
+                      physical id: 0.0.0
+                      bus info: scsi@4:0.0.0
+                      logical name: /dev/sdb
+                      logical name: /cdrom
+                      version: 8.07
+                      size: 4020MiB (4215MB)
+                      capabilities: removable
+                      configuration: ansiversion=2 logicalsectorsize=512 mount.fstype=iso9660 mount.options=ro,noatime,nojoliet,check=s,map=n,blocksize=2048 sectorsize=512 state=mounted
+                    *-medium
+                         physical id: 0
+                         logical name: /dev/sdb
+                         logical name: /cdrom
+                         size: 4020MiB (4215MB)
+                         capabilities: partitioned partitioned:dos
+                         configuration: mount.fstype=iso9660 mount.options=ro,noatime,nojoliet,check=s,map=n,blocksize=2048 signature=73d42d85 state=mounted
+                       *-volume
+                            description: Windows FAT volume
+                            vendor: mkfs.fat
+                            physical id: 2
+                            logical name: /dev/sdb2
+                            version: FAT12
+                            serial: 4297-7e16
+                            size: 15EiB
+                            capabilities: primary boot fat initialized
+                            configuration: FATs=2 filesystem=fat
+              *-usb:3
+                   description: Mass storage device
+                   product: USB DISK MODULE
+                   physical id: 4
+                   bus info: usb@1:4
+                   logical name: scsi5
+                   version: 1.00
+                   serial: 19006236C4B90803
+                   capabilities: usb-2.00 scsi emulated scsi-host
+                   configuration: driver=usb-storage maxpower=300mA speed=480Mbit/s
+                 *-disk
+                      description: SCSI Disk
+                      product: USB DISK MODULE
+                      physical id: 0.0.0
+                      bus info: scsi@5:0.0.0
+                      logical name: /dev/sdc
+                      version: PMAP
+                      size: 492MiB (515MB)
+                      capabilities: removable
+                      configuration: logicalsectorsize=512 sectorsize=512
+                    *-medium
+                         physical id: 0
+                         logical name: /dev/sdc
+                         size: 492MiB (515MB)
+                         capabilities: partitioned partitioned:dos
+                         configuration: signature=b66e61e9
+                       *-volume:0
+                            description: Linux filesystem partition
+                            vendor: Linux
+                            physical id: 1
+                            logical name: /dev/sdc1
+                            version: 1.0
+                            serial: 9333eb40-8071-460b-972f-a3192d483667
+                            size: 5244KiB
+                            capacity: 5244KiB
+                            capabilities: primary extended_attributes ext2 initialized
+                            configuration: filesystem=ext2 lastmountpoint=/media/user/9333eb40-8071-460b-972f-a3192d483667 modified=2018-03-25 17:03:27 mounted=2018-03-25 16:41:06 state=clean
+                       *-volume:1
+                            description: Linux filesystem partition
+                            vendor: Linux
+                            physical id: 2
+                            logical name: /dev/sdc2
+                            version: 1.0
+                            serial: e04ca6e7-a540-464e-a602-35065dfccb6f
+                            size: 235MiB
+                            capacity: 235MiB
+                            capabilities: primary bootable extended_attributes ext2 initialized
+                            configuration: filesystem=ext2 label=QTS_BOOT_PART2 lastmountpoint=/media/user/QTS_BOOT_PART2 modified=2018-03-25 17:03:27 mounted=2018-03-25 16:41:06 state=clean
+                       *-volume:2
+                            description: Linux filesystem partition
+                            vendor: Linux
+                            physical id: 3
+                            logical name: /dev/sdc3
+                            version: 1.0
+                            serial: 439724b7-fb28-4e71-a8ac-ef74b9509728
+                            size: 235MiB
+                            capacity: 235MiB
+                            capabilities: primary extended_attributes ext2 initialized
+                            configuration: filesystem=ext2 label=QTS_BOOT_PART3 modified=2018-03-25 17:03:27 mounted=2018-03-25 16:41:06 state=clean
+                       *-volume:3
+                            description: Extended partition
+                            physical id: 4
+                            logical name: /dev/sdc4
+                            size: 16MiB
+                            capacity: 16MiB
+                            capabilities: primary extended partitioned partitioned:extended
+                          *-logicalvolume:0
+                               description: Linux filesystem partition
+                               vendor: Linux
+                               physical id: 5
+                               logical name: /dev/sdc5
+                               version: 1.0
+                               serial: ba5d6eee-24a9-43bc-b861-8f4ebfbcd2c7
+                               size: 8304KiB
+                               capacity: 8304KiB
+                               capabilities: extended_attributes large_files ext2 initialized
+                               configuration: filesystem=ext2 modified=2018-03-25 17:03:27 mounted=2018-03-25 16:41:06 state=clean
+                          *-logicalvolume:1
+                               description: Linux filesystem partition
+                               vendor: Linux
+                               physical id: 6
+                               logical name: /dev/sdc6
+                               version: 1.0
+                               serial: c5a5224c-2a7e-46b4-b98c-e87b07fd65f9
+                               size: 4MiB
+                               capacity: 8688KiB
+                               capabilities: ext2 initialized
+                               configuration: filesystem=ext2 modified=2018-04-05 12:27:50 mounted=2018-03-25 16:41:06 state=clean
+           *-usbhost:1
+                product: xHCI Host Controller
+                vendor: Linux 4.15.0-13-generic xhci-hcd
+                physical id: 1
+                bus info: usb@2
+                logical name: usb2
+                version: 4.15
+                capabilities: usb-3.00
+                configuration: driver=hub slots=1 speed=5000Mbit/s
+              *-usb
+                   description: USB hub
+                   product: ASM1074
+                   vendor: QNAP System, Inc.
+                   physical id: 1
+                   bus info: usb@2:1
+                   version: 0.01
+                   serial: 000000000051
+                   capabilities: usb-3.00
+                   configuration: driver=hub maxpower=8mA slots=4 speed=5000Mbit/s
+        *-generic:1
+             description: Encryption controller
+             product: Atom Processor Z36xxx/Z37xxx Series Trusted Execution Engine
+             vendor: Intel Corporation
+             physical id: 1a
+             bus info: pci@0000:00:1a.0
+             version: 0e
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=mei_txe latency=0
+             resources: irq:100 memory:90500000-905fffff memory:90400000-904fffff
+        *-multimedia
+             description: Audio device
+             product: Atom Processor Z36xxx/Z37xxx Series High Definition Audio Controller
+             vendor: Intel Corporation
+             physical id: 1b
+             bus info: pci@0000:00:1b.0
+             version: 0e
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:101 memory:90914000-90917fff
+        *-pci:0
+             description: PCI bridge
+             product: Atom Processor E3800 Series PCI Express Root Port 1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: 0e
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16 ioport:d000(size=4096) memory:90800000-908fffff
+           *-storage
+                description: SATA controller
+                product: Marvell Technology Group Ltd.
+                vendor: Marvell Technology Group Ltd.
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                version: 11
+                width: 32 bits
+                clock: 33MHz
+                capabilities: storage pm msi pciexpress ahci_1.0 bus_master cap_list rom
+                configuration: driver=ahci latency=0
+                resources: irq:88 ioport:d050(size=8) ioport:d040(size=4) ioport:d030(size=8) ioport:d020(size=4) ioport:d000(size=32) memory:90810000-908107ff memory:90800000-9080ffff
+        *-pci:1
+             description: PCI bridge
+             product: Atom Processor E3800 Series PCI Express Root Port 2
+             vendor: Intel Corporation
+             physical id: 1c.1
+             bus info: pci@0000:00:1c.1
+             version: 0e
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:17 ioport:1000(size=4096)
+        *-pci:2
+             description: PCI bridge
+             product: Atom Processor E3800 Series PCI Express Root Port 3
+             vendor: Intel Corporation
+             physical id: 1c.2
+             bus info: pci@0000:00:1c.2
+             version: 0e
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:18 ioport:c000(size=4096) memory:90700000-907fffff
+           *-network
+                description: Ethernet interface
+                product: I210 Gigabit Network Connection
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:03:00.0
+                logical name: enp3s0
+                version: 03
+                serial: 00:08:9b:f8:aa:73
+                size: 1Gbit/s
+                capacity: 1Gbit/s
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pm msi msix pciexpress bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=igb driverversion=5.4.0-k duplex=full firmware=3.16, 0x800004d8 ip=192.168.243.191 latency=0 link=yes multicast=yes port=twisted pair speed=1Gbit/s
+                resources: irq:18 memory:90700000-9077ffff ioport:c000(size=32) memory:90780000-90783fff
+        *-pci:3
+             description: PCI bridge
+             product: Atom Processor E3800 Series PCI Express Root Port 4
+             vendor: Intel Corporation
+             physical id: 1c.3
+             bus info: pci@0000:00:1c.3
+             version: 0e
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:19 ioport:b000(size=4096) memory:90600000-906fffff
+           *-network
+                description: Ethernet interface
+                product: I210 Gigabit Network Connection
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:04:00.0
+                logical name: enp4s0
+                version: 03
+                serial: 00:08:9b:f8:aa:74
+                capacity: 1Gbit/s
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pm msi msix pciexpress bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=igb driverversion=5.4.0-k firmware=3.16, 0x800004d8 latency=0 link=no multicast=yes port=twisted pair
+                resources: irq:19 memory:90600000-9067ffff ioport:b000(size=32) memory:90680000-90683fff
+        *-isa
+             description: ISA bridge
+             product: Atom Processor Z36xxx/Z37xxx Series Power Control Unit
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 0e
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master cap_list
+             configuration: driver=lpc_ich latency=0
+             resources: irq:0
+        *-serial UNCLAIMED
+             description: SMBus
+             product: Atom Processor E3800 Series SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 0e
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm cap_list
+             configuration: latency=0
+             resources: memory:90918000-9091801f ioport:e000(size=32)
+     *-scsi
+          physical id: 1
+          logical name: scsi3
+          capabilities: emulated
+        *-disk
+             description: ATA Disk
+             product: ST3250318AS
+             vendor: Seagate
+             physical id: 0.0.0
+             bus info: scsi@3:0.0.0
+             logical name: /dev/sda
+             version: HP34
+             serial: 9VY67HW1
+             size: 232GiB (250GB)
+             capabilities: removable
+             configuration: ansiversion=5 logicalsectorsize=512 sectorsize=512
+           *-medium
+                physical id: 0
+                logical name: /dev/sda
+                size: 232GiB (250GB)
+                capabilities: gpt-1.00 partitioned partitioned:gpt
+                configuration: guid=5014f851-38e0-11e8-b34e-00089bf8aa73
+              *-volume:0
+                   description: boot partition
+                   vendor: FreeBSD
+                   physical id: 1
+                   logical name: /dev/sda1
+                   serial: 5021c66d-38e0-11e8-b34e-00089bf8aa73
+                   capacity: 511KiB
+                   capabilities: boot
+                   configuration: name=gptboot
+              *-volume:1
+                   description: UFS partition
+                   vendor: FreeBSD
+                   physical id: 2
+                   logical name: /dev/sda2
+                   serial: 503b619d-38e0-11e8-b34e-00089bf8aa73
+                   capacity: 3071MiB
+                   configuration: name=gptroot
+              *-volume:2
+                   description: swap partition
+                   vendor: FreeBSD
+                   physical id: 3
+                   logical name: /dev/sda3
+                   serial: 504da8a1-38e0-11e8-b34e-00089bf8aa73
+                   capacity: 4095MiB
+                   capabilities: nofs
+                   configuration: name=gptswap
+              *-volume:3
+                   description: UFS partition
+                   vendor: FreeBSD
+                   physical id: 4
+                   logical name: /dev/sda4
+                   serial: 50605d19-38e0-11e8-b34e-00089bf8aa73
+                   capacity: 225GiB
